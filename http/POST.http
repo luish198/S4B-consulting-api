@@ -1,0 +1,33 @@
+
+POST http://localhost:8080/clients
+Content-Type: application/json
+
+//{
+//    "name": "Luis Alberto II",
+//    "first_name": "H S II",
+//    "email":"luisalbert.co.uk"
+//}
+
+
+{
+"COMPANY_NAME":"S4B consulting III",
+"ADDRESS1":"Stuttgarter Str. 6",
+"ADDRESS2":"PO 1228",
+"TOWN":"waldenbuch",
+"COUNTY":"Baden-Wuerttemberg",
+"POST_CODE":"71111",
+"MAIN_CONTACT":"Luis Higuera Serrano",
+"TEL":"+4917656972342",
+"EMAIL":"luis@s4b-consulting.de-III",
+"EMAIL_2":"luish198108@gmail.com",
+"TEL2":"",
+"MOBILE":"",
+"WEBSITE":"www.s4b-consulting.de",
+"TYPECO":"1",
+"GENERICMARKET_ID":"1",
+"COMARKET_ID":"1",
+"M_USER":"1001",
+"TIME":"2021-08-18 16:58:37"
+
+}
+
