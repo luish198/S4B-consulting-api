@@ -1,6 +1,4 @@
 import dotenv from 'dotenv';
-dotenv.config();
-
 import mongoose from 'mongoose';
 import express from 'express';
 //import bodyParser from 'body-parser';
@@ -8,6 +6,9 @@ import express from 'express';
 import clientsRouter from './routes/clients.js';
 import cors from 'cors';
 import { createClient } from './controllers/clients.js';
+
+dotenv.config();
+const PORT = process.env.PORT || 5000;
 
 
 const app = express()
@@ -43,8 +44,8 @@ app.use("/clients", clientsRouter)
 
 mongoose.connect(process.env.CONNECTION_URI, ()=>{
     console.log("Mongo is connected !")
-    app.listen(process.env.PORT, ()=>{
-        console.log("Server Runnin on port " + process.env.PORT)
+    app.listen(PORT, ()=>{
+        console.log("Server Runnin on port " + PORT)
     })
 })
 
